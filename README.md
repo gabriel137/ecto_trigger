@@ -1,3 +1,13 @@
+Observações:
+
+- Utilizei o banco postgres no projeto
+- Criei uma migration para criar a abela de exemplo para testes chamada: financiamentos
+- Criei uma migration com a criação da trigger e função de disparo de notificação no postgres que você encontra na pasta priv > repo > migrations
+
+Depois de criar o banco, gerar as migrations e executar o banco você poderá iniciar o terminal com "iex -S mix" e ao inserir ou modificar as colunas etapa e status na tabela de financiamento um evento irá ser disparado e você poderá ve-lo no log do seu terminal que está executando a aplicaçao.
+
+Os passos abaixos padrão da documentação do elixir te ajudam a rodar o projeto.
+
 # PhoenixDefault
 
 To start your Phoenix server:
